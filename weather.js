@@ -2,9 +2,8 @@
 var http = require('http')
 var printer = require('./printer') 
 
-
 function get(city, country) {
-	var request = http.get("http://api.aerisapi.com/observations/"+city+","+country+"?client_id=000000&client_secret=000000", function (response){
+	var request = http.get("http://api.aerisapi.com/observations/"+city+","+country+"?client_id=&client_secret=", function (response){
 
 		//console.dir(response.statusCode)
 

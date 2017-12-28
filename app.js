@@ -51,7 +51,7 @@ app.post('/', (request, response) => {
 	//cities.forEach(function(city)
 	//{
 	weather.get(city, country)
-
+	
 	response.render('pages/index', {temp: temp, city: city, country: country})
 	
 })
